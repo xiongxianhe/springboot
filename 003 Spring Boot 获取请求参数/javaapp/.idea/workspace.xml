@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad146218-fcc9-4491-aa28-488168f746b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jdz/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jdz/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../004 规范统一输出 json/javaapp/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../004 规范统一输出 json/javaapp/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../004 规范统一输出 json/javaapp/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../004 规范统一输出 json/javaapp/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../004 规范统一输出 json/javaapp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../004 规范统一输出 json/javaapp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../004 规范统一输出 json/javaapp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../004 规范统一输出 json/javaapp/src/main/java/com/jdz/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../004 规范统一输出 json/javaapp/src/test/java/com/jdz/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,8 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "a6b799f805ab08c2efa8056622659fe5"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -95,7 +97,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665298493400</updated>
-      <workItem from="1665298498004" duration="8221000" />
+      <workItem from="1665298498004" duration="9877000" />
+      <workItem from="1665364048112" duration="1109000" />
     </task>
     <servers />
   </component>
