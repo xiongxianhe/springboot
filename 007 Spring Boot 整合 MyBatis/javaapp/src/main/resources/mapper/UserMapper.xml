@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jdz.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="User">
+        <id column="uid" property="uid" />
+        <result column="name" property="name" />
+        <result column="age" property="age" />
+        <result column="addr" property="addr" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        uid, name, age, addr
+    </sql>
+
+    <insert id="doCreate">
+        insert into jdz_user(name, age, addr) values (#{name}, #{age}, #{addr})
+    </insert>
+
+    <update id="doUpdate" parameterType="User">
+        update jdz_user
+        <set>
+            <if test="name != null"> name = #{name}, </if>
+            <if test="age != null"> age = #{age}, </if>
+            <if test="addr != null"> addr = #{addr} </if>
+        </set>
+        where uid = #{uid}
+    </update>
+
+    <delete id="doDelByUid">
+        delete from jdz_user where uid=#{uid}
+    </delete>
+
+    <select id="findByUid" resultType="User">
+        select * from jdz_user where uid=#{uid}
+    </select>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        select * from jdz_user
+    </select>
+</mapper>
