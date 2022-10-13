@@ -20,14 +20,20 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
+import java.sql.SQLException;
 
 @Configuration
 public class MyDuridConfig {
 
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource")
-    public DataSource druidDataSource() {
-        return new DruidDataSource();
+    public DataSource druidDataSource() throws SQLException {
+        DruidDataSource druidDataSource = new DruidDataSource();
+        //同时开启 sql 监控(stat) 和防火墙(wall)，中间用逗号隔开。
+        //开启防火墙能够防御 SQL 注入攻击
+        druidDataSource.setFilters("stat,wall");
+        return druidDataSource;
+        //return new DruidDataSource();
     }
 
     /**
@@ -54,7 +60,8 @@ public class MyDuridConfig {
     }
     /**
      * 配置服务过滤器
-     *
+     * 向容器中添加 WebStatFilter
+     * 开启内置监控中的 Web-jdbc 关联监控的数据
      * @return 返回过滤器配置对象
      */
     @Bean
