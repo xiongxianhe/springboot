@@ -1,0 +1,6 @@
+jwt:
+  header:
+    alg: "HS256"
+    type: "JWT"
+  secret: "RG2Sc-tqLs-Z64aouZgVzxxxhSV21Io_#12fbdrOvyfb7lA0"
+  expire-time: 1
