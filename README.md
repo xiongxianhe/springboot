@@ -5,8 +5,8 @@
 
 ## 源码
 源码：
-* github: https://github.com/xiongxianhe/sprintboot
-* gitee: https://gitee.com/null_186/sprintboot
+* github: https://github.com/xiongxianhe/springboot
+* gitee: https://gitee.com/null_186/springboot
 
 ## 教程
-GitHub 为教程过程中的源码，教程在：https://blog.uwenya.cc/category/java/sprintboot-book
+GitHub 为教程过程中的源码，教程在：https://blog.uwenya.cc/category/java/springboot-book
