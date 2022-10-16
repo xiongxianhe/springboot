@@ -29,4 +29,8 @@ public class JDZBaseContextHolder {
         }
         return obj;
     }
+
+    public static void removeContext() {
+        contextHolder.remove();
+    }
 }
