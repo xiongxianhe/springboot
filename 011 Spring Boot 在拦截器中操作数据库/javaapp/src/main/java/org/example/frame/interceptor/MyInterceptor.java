@@ -11,6 +11,8 @@
 package org.example.frame.interceptor;
 
 import org.example.entity.User;
+import org.example.frame.context.JDZBaseContextHolder;
+import org.example.frame.context.JDZContext;
 import org.example.frame.exception.JDZException;
 import org.example.frame.util.RtCode;
 import org.example.frame.util.TokenBuilder;
@@ -54,6 +56,11 @@ public class MyInterceptor implements HandlerInterceptor {
         if(user == null) { // 用户不在数据库中
             throw new JDZException(RtCode.ERR_USER_NOT_EXIST);
         }
+
+        // 放入上下文
+        JDZContext context = new JDZContext();
+        context.setCurrentUser(user);
+        JDZBaseContextHolder.setContext(context);
 
         return true;
     }

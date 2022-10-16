@@ -11,6 +11,8 @@
 package org.example.controller;
 
 import org.example.entity.User;
+import org.example.frame.context.JDZBaseContextHolder;
+import org.example.frame.context.JDZContext;
 import org.example.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -42,7 +44,10 @@ public class UserController {
 
     @RequestMapping("/user/info")
     public User info(Integer uid) {
-        return userService.getInfo(uid);
+        JDZContext jdzContext = JDZBaseContextHolder.getContext();
+        User user = jdzContext.getCurrentUser();
+        System.out.println(user);
+        return userService.getInfo(user.getUid()); // uid
     }
 
     @RequestMapping("/user/list")
